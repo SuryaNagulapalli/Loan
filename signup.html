@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGNUP</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            @media screen and (max-width:786px){
+                body{
+                    background-image: url("https://t4.ftcdn.net/jpg/01/46/40/35/360_F_146403506_381OxD624hppWMQcIbjLuSr8TCW1q2lj.jpg");
+                    background-size: cover;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .maincontainer{
+                    height: 90%;
+                    width:90%;
+                    border: 1px solid black;
+                    background-color: white;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .imagecontainer
+                {
+                    width: 100%;
+                    height: 40%;
+                }
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                }
+                h1{
+                    color: black;
+                    font-family: "Roboto";
+                    padding: 12px;
+                    font-weight: bold;
+                }
+                .formcontainer
+                {
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-top: 2px solid black;
+                }
+                .input-field {
+                    width: 80%;
+                    border-radius: 8px;
+                    height:42px;
+                    margin-bottom: 20px;
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 6px; 
+                }
+            
+                ::placeholder
+                {
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 6px;
+                }
+                .signup-button {
+                    padding: 8px;
+                    width:50%;
+                    color: black;
+                    font-family: "Roboto";
+                    border: 1px solid black;
+                    border-radius: 12px;
+                    margin-bottom: 20px;
+                }
+    
+                .signup-button:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+
+            @media screen and (min-width:787px){
+                body{
+                    background-image: url("https://t4.ftcdn.net/jpg/01/46/40/35/360_F_146403506_381OxD624hppWMQcIbjLuSr8TCW1q2lj.jpg");
+                    background-size: cover;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .maincontainer{
+                    height: 70vh;
+                    width:60vw;
+                    border: 1px solid black;
+                    background-color: white;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .imagecontainer
+                {
+                    width: 50%;
+                    height: 100%;
+                }
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 12px;
+                    border-bottom-left-radius: 12px;
+                }
+                
+                h1{
+                    color: black;
+                    font-family: "Roboto";
+                    padding: 12px;
+                    font-weight: bold;
+                }
+                .formcontainer
+                {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-left: 2px solid black;
+                }
+
+                .input-field {
+                    width: 80%;
+                    border-radius: 8px;
+                    height:42px;
+                    margin-bottom: 30px;
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 6px; 
+                }
+            
+                ::placeholder
+                {
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-left: 6px;
+                }
+                .signup-button {
+                    padding: 8px;
+                    width:50%;
+                    color: black;
+                    font-family: "Roboto";
+                    border: 1px solid black;
+                    border-radius: 12px;
+                }
+    
+                .signup-button:hover {
+                    background-color: black;
+                    color: white;
+                }
+
+            }
+    
+    </style>
+
+        <form class="maincontainer" method="post" action="/" autocomplete="off" id="signupForm">
+
+            <div class="imagecontainer">
+                <img
+                    src="https://nammafamilybuilder.com/wp-content/uploads/2023/04/8939-2222-70_11zon.jpg"
+                    class="image">
+
+            </div>
+            <div class="formcontainer">
+                <center><h1>Signup</h1></center>
+
+                <input type="text" class="form-control input-field"
+                    name="Firstname" placeholder="Firstname" required autocomplete="off">
+
+                <input type="text" class="form-control input-field"
+                    name="Lastname" placeholder="lastname" required autocomplete="off">
+
+                <input type="text" class="form-control input-field" name="Email"
+                    placeholder="Email@gmail.com" required autocomplete="off">
+
+                <input type="password" class="form-control input-field"
+                    name="Password" placeholder="Password" required autocomplete="off">
+
+                <button type="submit" class="signup-button">Submit</button>
+
+            </div>
+        </form>
+
+        <script>
+            document.getElementById('signupForm').addEventListener('submit', function(event) {
+                // No need to prevent the default behavior if you want the page to reload
+            });
+        </script>
+    </body>
+</html>

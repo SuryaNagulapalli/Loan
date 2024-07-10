@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eed1286ea2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.main-section-bg-container
+{
+    background-image: url("https://st4.depositphotos.com/2974663/29432/i/450/depositphotos_294325590-stock-photo-stacks-money-coins-blurred-background.jpg");
+    height: 60vh;
+    background-size: cover;
+}
+
+.main-section-content
+{
+    padding-top: 100px;
+}
+
+.loan-small-heading
+{
+    color: yellow;
+    font-family: 'roboto';
+
+}
+
+.heading
+{
+    color: white;
+    font-family: 'roboto';
+    font-weight: 1000;
+    font-size: 45px;
+}
+
+.paragraph
+{
+    color: white;
+    font-size: 18px;
+}
+
+
+.start
+{
+    height: 40px;
+    width: 150px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+}
+
+
+
+
+.loan-section-card
+{
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.loan-heading
+{
+    color: blue;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.image
+{
+    height: 120px;
+    width: 120px;
+}
+
+.loan-section-paragraph
+{
+    color: black;
+}
+
+
+.service-section
+{
+    background-color: ghostwhite;
+}
+
+.service-heading
+{
+    color: blue;
+    font-weight: 600;
+    font-family: 'roboto';
+    font-size: 35px;
+}
+
+.service-section-card
+{
+    text-align: center;
+}
+
+.service-paragraph
+{
+    color: gray;
+    font-weight: 300;
+    font-family: 'roboto';
+    font-size: 16px;
+}
+
+.service-card
+{
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.learn-more
+{
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: black;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+.application-number
+{
+    font-size: 35px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: ghostwhite;
+    padding-top: 5px;
+}
+
+
+.contact-section
+{
+    background-color: ghostwhite;
+}
+
+.contact-name
+{
+    color: black;
+    font-weight: 600;
+    font-family: 'roboto';
+    font-size: 25px; 
+}
+.contact-card
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contact-content
+{
+    color: gray;
+    font-weight: 300;
+    font-family: 'roboto';
+    font-size: 16px;
+}
+    </style>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Service</a>
+            <a class="nav-link" href="#">Process</a>
+            <a class="nav-link" href="#">Review</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-section-bg-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <div class="main-section-content">
+                      <h4 class="loan-small-heading">Looking For Loans?</h4>
+                      <h1 class="heading">We Are Here For You.</h1>
+                      <p class="paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                      Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                      Veritatis,Corporis.
+                      </p>
+                      <button class="start">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="loan-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="loan-section-card">
+                <img src="https://www.seekpng.com/png/detail/892-8929839_for-assistance-call-1800-425-3800-1800-112.png" class="image"/>
+                <h1 class="loan-heading">Home Loan</h1>
+                <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                Veritatis,Corporis.</p>
+              </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="loan-section-card">
+                <img src="https://media.istockphoto.com/id/539259025/vector/pay-with-three-credit-card.jpg?s=612x612&w=0&k=20&c=OTi4yzceIzff4HexgOX8eKbk6aetjDzZvQG3Tv49rQk=" class="image"/>
+                <h1 class="loan-heading">Credit Loan</h1>
+                <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                Veritatis,Corporis.</p>
+              </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="loan-section-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/181/181095.png" class="image"/>
+                <h1 class="loan-heading">Business Loan</h1>
+                <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                Veritatis,Corporis.</p>
+              </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="loan-section-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4i8Qrfai3u9_TT4ulDAJGfdWA4ufuadP3uw&s" class="image"/>
+                <h1 class="loan-heading">Car Loan</h1>
+                <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                Veritatis,Corporis.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="service-section pt-5 pb-5 m-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="service-section-card">
+               <h1 class="service-heading">
+                What Services We Offer
+               </h1>
+               <p class="service-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                Veritatis,Corporis.</p>
+            </div>
+          </div>
+
+            <div class="col-12 col-lg-4  mb-3">
+              <div class="service-card shadow">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/911/349/small/dollar-icon-man-for-your-web-site-logo-app-ui-design-free-vector.jpg" class="image"/>
+                <h1 class="loan-heading">Personal Loan</h1>
+                <p class="service-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                  Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                  Veritatis,Corporis.</p>
+                  <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4  mb-3">
+              <div class="service-card shadow">
+                <img src="https://www.seekpng.com/png/detail/892-8929839_for-assistance-call-1800-425-3800-1800-112.png" class="image"/>
+                <h1 class="loan-heading">Home Loan</h1>
+                <p class="service-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                  Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                  Veritatis,Corporis.</p>
+                  <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3">
+              <div class="service-card shadow">
+                <img src="https://www.pngitem.com/pimgs/m/227-2270284_student-loan-icon-student-loan-clipart-hd-png.png" class="image"/>
+                <h1 class="loan-heading">Education Loan</h1>
+                <p class="service-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                  Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                  Veritatis,Corporis.</p>
+                  <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="application-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="service-section-card">
+                <h1 class="service-heading">
+                Fast and Easy Application Process.
+                </h1>
+                <p class="service-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+                Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                Veritatis,Corporis.</p>
+              </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-3">
+            <div class="loan-section-card shadow">
+              <center>
+              <h1 class="application-number">1</h1>
+              </center>
+              <h1 class="loan-heading">Choose Loan Amount</h1>
+              <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+              Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+              Veritatis,Corporis.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 mb-3">
+            <div class="loan-section-card shadow">
+              <center>
+              <h1 class="application-number">2</h1>
+              </center>
+              <h1 class="loan-heading">Approved Your Loan</h1>
+              <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+              Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+              Veritatis,Corporis.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 mb-3">
+            <div class="loan-section-card shadow">
+              <center>
+              <h1 class="application-number">3</h1>
+              </center>
+              <h1 class="loan-heading">Get Loan Cash</h1>
+              <p class="loan-section-paragraph">Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. Enim Inclidunt Debitis 
+              Elus Praesentium lpsa Delectus Minima Eos Aliquam Omnas Nam.Lorem, lpsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+              Veritatis,Corporis.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary">Take Loan Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contact-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="service-section-card">
+                <h1 class="service-heading">
+                Contact Us 
+                </h1>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-3 p-3">
+              <div class="contact-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="blue" class="bi bi-map" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                  </svg>
+                  <h1 class="contact-name">Our Address.</h1>
+                  <p class="contact-content">Dharmavaram, India - 533-430</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3 p-3">
+              <div class="contact-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="blue" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                  <h1 class="contact-name">Phone No.</h1>
+                  <p class="contact-content">+91 83674 96692</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3 p-3">
+              <div class="contact-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="blue" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+                  <h1 class="contact-name">Our Email.</h1>
+                  <p class="contact-content">suryanagulapalli40@gmail.com</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
